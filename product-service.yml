@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: product-service
+
+product:
+  message: "Hello from centralized config (product-service)"
+
+server:
+  port: 8081
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
